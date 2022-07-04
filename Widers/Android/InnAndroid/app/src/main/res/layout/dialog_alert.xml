@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="271dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog">
+
+    <!-- 타이틀 -->
+    <TextView
+        android:id="@+id/d_alert_titleTv"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:text="@string/comm_notice"
+        style="@style/popup_title"
+        />
+
+    <View
+        android:id="@+id/d_alert_lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/d_alert_titleTv"
+        android:background="#808080"/>
+
+    <!-- 메시지 -->
+    <TextView
+        android:id="@+id/d_alert_messageTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="34dp"
+        android:layout_below="@+id/d_alert_titleTv"
+        android:maxLines="4"
+        android:gravity="center_horizontal"
+        style="@style/popup_message"
+        />
+
+    <View
+        android:id="@+id/d_alert_msgHorizontalLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/d_alert_messageTv"
+        />
+
+    <!-- 컨테이너 뷰 -->
+    <LinearLayout
+        android:id="@+id/d_alert_containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_alert_msgHorizontalLineView"
+        android:gravity="center"
+        android:orientation="vertical"/>
+
+    <!-- 하단 버튼 뷰 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_alert_containerLayout"
+        android:orientation="horizontal">
+
+        <!-- 취소 버튼 -->
+        <Button
+            android:id="@+id/d_alert_cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/comm_cancel"
+            style="@style/common_btn_gray"
+            />
+
+        <View
+            android:id="@+id/d_alert_verSpaceView"
+            android:layout_width="10dp"
+            android:layout_height="48dp"/>
+
+        <!-- 확인 버튼 -->
+        <Button
+            android:id="@+id/d_alert_confirmBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            style="@style/common_btn_blue"
+            />
+    </LinearLayout>
+</RelativeLayout>
+

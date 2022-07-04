@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:background="#EDEDEA"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" android:background="#EDEDEA"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/roomServiceImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/icon_roomservice_beer"
+            />
+
+        <TextView
+            android:id="@+id/roomServiceNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="물"
+            android:textColor="@color/actionbar_red"
+            android:gravity="center"
+            />
+
+        <ImageView
+            android:id="@+id/roomServiceReadyImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/icon_roomservice_ready" />
+
+    </LinearLayout>
+
+</LinearLayout>

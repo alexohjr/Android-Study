@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <!-- 고정할 툴바 -->
+
+        <LinearLayout
+            android:id="@+id/includeToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="vertical"
+            app:layout_collapseMode="pin"
+            android:fitsSystemWindows="true"
+            android:visibility="visible">
+            <include layout="@layout/view_tool_bar" />
+        </LinearLayout>
+
+        <!--<android.support.v7.widget.Toolbar-->
+            <!--android:id="@+id/toolbar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="?attr/actionBarSize"-->
+            <!--app:layout_collapseMode="pin"-->
+            <!--android:fitsSystemWindows="true"-->
+            <!--android:background="#3E3839"-->
+            <!--&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:weightSum="10">-->
+                <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:src="@mipmap/btn_back"-->
+                    <!--android:layout_gravity="center_vertical|end"-->
+                    <!--android:layout_marginEnd="10dp"/>-->
+                <!--<LinearLayout-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:layout_weight="10">-->
+                    <!--<TextView-->
+                        <!--android:id="@+id/toolbar_title"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:gravity="center"-->
+                        <!--android:text=""-->
+                        <!--android:textColor="#ffffff"-->
+                        <!--android:textStyle="bold"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--tools:ignore="HardcodedText" />-->
+                <!--</LinearLayout>-->
+
+                <!--<Button-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@mipmap/btn_sub4_roomsave_off"-->
+                    <!--android:layout_gravity="center_vertical|end"-->
+                    <!--android:layout_marginEnd="10dp"/>-->
+                <!--<Button-->
+                    <!--android:id="@+id/roomGroupShareButton"-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@mipmap/btn_sub4_share"-->
+                    <!--android:layout_gravity="center_vertical|end"-->
+                    <!--android:layout_marginEnd="10dp"/>-->
+
+            <!--</LinearLayout>-->
+
+
+        <!--</android.support.v7.widget.Toolbar>-->
+
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip" android:weightSum="10"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip" android:layout_weight="6"
+                    android:orientation="vertical" >
+
+                    <!-- 룸 이미지 뷰페이저 -->
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/roomImageViewPager"
+                        android:layout_width="fill_parent"
+                        android:layout_height="260sp"
+
+                        ></android.support.v4.view.ViewPager>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    >
+
+                    <Button
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/roomAddressRefreshButton"
+                        android:background="@mipmap/icon_room_location"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                        android:id="@+id/roomAddressTextView"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/bg_main_rating"/>
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                    </View>
+                    <TextView
+                        android:id="@+id/roomMapButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/icon_room_map"
+                        android:gravity="end"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:layout_weight="4" android:weightSum="2"
+                    android:layout_height="0dip"   android:background="#F9F9F8"
+                    android:orientation="horizontal" >
+
+
+                    <LinearLayout
+                        android:id="@+id/dayuseReserveLinearLayout"
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="wrap_content"   android:background="@mipmap/bg_room_dayuse"
+                        android:layout_marginRight="10dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"  android:layout_weight="1" android:weightSum="10"
+                            android:layout_height="150dp"   android:background="@color/translucent"
+                            android:layout_marginLeft="25dp" android:layout_marginTop="10dp" android:layout_marginRight="5dp"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="4"
+                                android:layout_height="0dp" >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="대실"
+                                    android:gravity="top|start"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="1.5" android:weightSum="2"
+                                android:layout_height="0dp" android:orientation="horizontal" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="마감시간"
+                                    android:gravity="center|start"/>
+                                <TextView
+                                    android:id="@+id/dayuseEndTimeTextView"
+                                    android:layout_width="wrap_content" android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="23시까지"
+                                    android:gravity="center|end"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="1.5" android:weightSum="2"
+                                android:layout_height="0dp" android:orientation="horizontal" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="이용시간"
+                                    android:gravity="center|start"/>
+                                <TextView
+                                    android:id="@+id/dayuseTimeTextView"
+                                    android:layout_width="wrap_content" android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="최대 4시간"
+                                    android:gravity="center|end"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="3"
+                                android:layout_height="0dp" >
+
+                                <TextView
+                                    android:text="예약" android:background="@color/lightcoral"
+                                    android:alpha="80" android:textColor="#ffffff" android:gravity="center"
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:id="@+id/dayuseReserveTextView"
+                                    android:visibility="gone"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/dayusePriceTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="25,000원"
+                                    android:gravity="bottom|end"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/actionbar_red"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/overnightReserveLinearLayout" android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"  android:layout_weight="1"
+                        android:layout_height="wrap_content"   android:background="@mipmap/bg_room_overnight"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"  android:layout_weight="1" android:weightSum="10"
+                            android:layout_height="150dp"   android:background="@color/translucent"
+                            android:layout_marginRight="25dp" android:layout_marginTop="10dp" android:layout_marginLeft="5dp"
+                            android:orientation="vertical" >
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="4"
+                                android:layout_height="0dp" >
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="숙박"
+                                    android:gravity="top|start"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="1.5" android:weightSum="2"
+                                android:layout_height="0dp" android:orientation="horizontal" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="입실시간"
+                                    android:gravity="center|start"/>
+                                <TextView
+                                    android:id="@+id/checkinTimeTextView"
+                                    android:layout_width="wrap_content" android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="18시부터"
+                                    android:gravity="center|end"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="1.5" android:weightSum="2"
+                                android:layout_height="0dp" android:orientation="horizontal" >
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:text="퇴실시간"
+                                    android:gravity="center|start"/>
+                                <TextView
+                                    android:id="@+id/checkoutTimeTextView"
+                                    android:layout_width="wrap_content" android:layout_weight="1"
+                                    android:layout_height="match_parent"
+                                    android:text="익일 12시"
+                                    android:gravity="center|end"/>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent" android:layout_weight="3"
+                                android:layout_height="0dp" >
+
+                                <TextView
+                                    android:text="예약" android:background="@color/lightcoral"
+                                    android:alpha="80" android:textColor="#ffffff" android:gravity="center"
+                                    android:layout_width="50dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:id="@+id/overnightReserveTextView"
+                                    android:visibility="gone"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/overnightPriceTextView"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:text="50,000원"
+                                    android:gravity="bottom|end"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/actionbar_red"/>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:background="#F9F9F8"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" android:layout_marginLeft="10dp"
+                    android:background="#F9F9F8">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="객실정보 > "/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="100dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="공지/혜택 > "/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="#F9F9F8">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:text="후기 > " />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent" android:layout_gravity="bottom"
+        android:layout_height="50sp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="대실 예약"
+                android:id="@+id/roomDayuseReserveButton"
+                android:background="@mipmap/btn_room_dayuse_reserve"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="숙박 예약"
+                android:id="@+id/roomOvernightReserveButton"
+                android:background="@mipmap/btn_room_overnight_reserve"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+</FrameLayout>

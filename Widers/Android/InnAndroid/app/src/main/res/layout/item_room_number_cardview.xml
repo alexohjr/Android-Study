@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/roomNumberCardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:minWidth="400dp"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@mipmap/bg_main_page2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom|right"
+                    android:orientation="vertical"
+                    android:weightSum="2"
+                    android:background="#3E3839"
+                    android:alpha="0.8"
+                    android:layout_weight="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="top"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/roomNumberTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="left"
+                            android:text="ddd"
+                            android:textColor="#ffffff"
+                            android:textSize="30dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="vertical"
+                        android:layout_weight="1"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="start">
+                            <TextView
+                                android:id="@+id/roomNumberDayuseTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:maxLines="1"
+                                android:text="대실"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="10dp"/>
+                            <TextView
+                                android:id="@+id/roomNumberMaxUseTimeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:maxLines="1"
+                                android:text="최대5시간"
+                                android:textColor="#ffffff"
+                                android:gravity="center"/>
+
+                            <TextView
+                                android:id="@+id/roomNumberDayusePriceTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:maxLines="1"
+                                android:text="30,000원"
+                                android:textColor="#ffffff"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|end"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="start">
+                            <TextView
+                                android:id="@+id/roomNumberOvernightTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:maxLines="1"
+                                android:text="숙박"
+                                android:gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="10dp"/>
+                            <TextView
+                                android:id="@+id/roomNumberEntTimeTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:maxLines="1"
+                                android:text="16:00입실"
+                                android:textColor="#ffffff"
+                                android:gravity="center"
+                                />
+
+                            <TextView
+                                android:id="@+id/roomNumberOvernightPriceTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:maxLines="1"
+                                android:text="50,000원"
+                                android:textColor="#ffffff"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical|end"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

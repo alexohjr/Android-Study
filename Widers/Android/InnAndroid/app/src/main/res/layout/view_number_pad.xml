@@ -1,0 +1,196 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_numberpad"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="4dp"
+        android:orientation="horizontal" >
+        
+        <!-- 첫번째 라인 -->
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 1 -->
+            <Button
+                android:id="@+id/btn_keypad1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                
+                android:text="1"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"/>
+
+
+            <!-- 4 -->
+            <Button
+                android:id="@+id/btn_keypad4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="4" />
+            
+            <!-- 7 -->
+            <Button
+                android:id="@+id/btn_keypad7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="7" />
+
+            <!-- <- -->
+            <Button
+                android:id="@+id/btn_keypad_back"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/keypad_margin"
+            android:layout_height="match_parent"/>
+
+        <!-- 두번째 라인 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 2 -->
+            <Button
+                android:id="@+id/btn_keypad2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                
+                android:text="2"
+                style="@style/common_text_number_pad"/>
+
+            <!-- 5 -->
+            <Button
+                android:id="@+id/btn_keypad5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="5" />
+            
+            <!-- 8 -->
+            <Button
+                android:id="@+id/btn_keypad8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="8" />
+
+            <!-- 0 -->
+            <Button
+                android:id="@+id/btn_keypad0"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="0" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/keypad_margin"
+            android:layout_height="match_parent"/>
+
+        <!-- 세번째 라인 -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 3 -->
+            <Button
+                android:id="@+id/btn_keypad3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="3" />
+
+            <!-- 6 -->
+            <Button
+                android:id="@+id/btn_keypad6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="6" />
+            
+            <!-- 9 -->
+            <Button
+                android:id="@+id/btn_keypad9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/keypad_margin"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                
+                android:text="9" />
+
+            <!-- C -->
+            <Button
+                android:id="@+id/btn_keypad_deleteAll"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_keypad"
+                style="@style/common_text_number_pad"
+                android:text="C"
+                android:textSize="@dimen/text_default_number_pad"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/keypad_margin"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9F8"
+    android:orientation="vertical"
+    android:weightSum="10" >
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip" android:weightSum="10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/companyNameTextView"
+                    android:layout_width="match_parent" android:layout_weight="2"
+                    android:layout_height="50dp"
+                    android:textColor="#000000"
+                    android:textSize="30dp"
+                    android:text="업체명"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/gradeNameTextView"
+                    android:layout_width="match_parent" android:layout_weight="2"
+                    android:layout_height="30dp"
+                    android:textSize="15dp"
+                    android:text="객실타입"
+                    android:gravity="center"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:weightSum="2"
+                    android:layout_height="30dp" android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="예약시간 : "
+                        android:gravity="center|end"/>
+                    <TextView
+                        android:id="@+id/reserveTextView"
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="23시까지"
+                        android:gravity="center|start"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                android:layout_width="match_parent" android:weightSum="2"
+                android:layout_height="30dp" android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="예약자명 : "
+                        android:gravity="center|end"/>
+                    <TextView
+                        android:id="@+id/reserveNameTextView"
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="홍길동"
+                        android:gravity="center|start"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent" android:weightSum="2"
+                    android:layout_height="30dp" android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="전화번호 : "
+                        android:gravity="center|end"/>
+                    <TextView
+                        android:id="@+id/reserveHpNoTextView"
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="01040404040"
+                        android:gravity="center|start"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_margin="5dp"
+                android:layout_height="wrap_content" android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/enteranceTypeLinearLayout"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent" android:weightSum="5"
+                    android:layout_height="70dp" android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="match_parent" android:weightSum="2"
+                        android:layout_height="30dp" android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="0dp" android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:textStyle="bold"
+                            android:textColor="#000000"
+                            android:textSize="20dp"
+                            android:text="출입 방법"
+                            android:gravity="start|center"/>
+                        <TextView
+                            android:id="@+id/enteranceTypeTextView"
+                            android:layout_width="0dp" android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:text="선택 > "
+                            android:gravity="center|end"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp" android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/hotpink"
+                            android:text="객실 출입방법을 선택해 주세요."
+                            android:gravity="center|start"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent" android:layout_margin="5dp"
+                android:layout_height="wrap_content" android:layout_weight="4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/enteranceTypeInputLinearLayout"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent" android:weightSum="5"
+                    android:layout_height="70dp" android:orientation="vertical" >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" android:orientation="horizontal" >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:inputType="numberPassword"
+                            android:maxLength="6"
+                            android:hint="비밀번호 6자리를 입력하세요."
+                            android:id="@+id/sendPasswordEditText"
+                            />
+
+                        <Button
+                            android:id="@+id/sendBluetoothButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="블루투스 전송"
+                            android:gravity="center|end"/>
+
+                        <Button
+                            android:id="@+id/sendNFCButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="NFC 전송"
+                            android:gravity="center|end"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp" android:orientation="horizontal" >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textColor="@color/hotpink"
+                            android:text="비밀번호 입력, NFC 정보 전송을 하십시오."
+                            android:gravity="center|start"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_weight="2"
+                android:layout_height="30dp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:text="개인정보 이용규정"
+                android:gravity="start|center"/>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent" android:weightSum="5"
+                android:layout_height="100dp" android:orientation="vertical" >
+                <LinearLayout
+                    android:layout_width="match_parent" android:weightSum="2"
+                    android:layout_height="30dp" android:orientation="horizontal" >
+                    <TextView
+                        android:layout_width="0dp" android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="개인정보 이용규칙~~~~"
+                        android:gravity="center|start"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <Button
+                    android:id="@+id/enteranceButton"
+                    android:layout_margin="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/hotpink"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:textSize="30dp"
+                    android:text="객실설정"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

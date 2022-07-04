@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_color">#33BBFF</color>
+
+
+
+    <color name="lightcoral">#f08080</color>
+    <color name="hotpink">#ff69b4</color>
+    <color name="khaki">#f0e68c</color>
+    <color name="gold">#ffd700</color>
+    <color name="cyan">#00ffff</color>
+    <color name="skyblue">#87ceed</color>
+    <color name="tomato">#ff6347</color>
+    <color name="lawngreen">#7cfc00</color>
+    <color name="lightgrey">#d3d3d3</color>
+    <color name="white">#ffffff</color>
+    <color name="pure">#00000000</color>
+    <color name="darkgrey">#666666</color>
+
+
+    <!-- PopUp 타이틀바 -->
+    <color name="comm_popup_title_bg">#7fabf7</color>
+    <color name="comm_popup_title_fontColor">#157efb</color>
+    <color name="comm_popup_btn_bg">#157efb</color>
+    <color name="comm_listbutton_fontColor">#000000</color>
+
+    <color name="actionbar_red">#D1463D</color>
+    <color name="translucent">#00000000</color>
+
+    <color name="and_theme_red">#D1461D</color>
+    <color name="and_theme_red2">#D1463D</color>
+
+
+    <!-- 리스트 기본칼라 -->
+    <color name="comm_boldFont_color">#222222</color>
+    <color name="comm_defaultFont_color">#999999</color>
+    <color name="comm_anotherFont_color">#157efb</color>
+
+
+    <!-- EZ 컨트롤 -->
+    <color name="btn_popup_cancel_normal">#90999f</color>
+    <color name="btn_popup_cancel_pressed">#868e94</color>
+    <color name="btn_popup_confirm_normal">#64b5f6</color>
+    <color name="btn_popup_confirm_pressed">#64A5E6</color>
+
+    <color name="title_color">#434849</color>
+
+    <!-- EZ 컨트롤 -->
+</resources>

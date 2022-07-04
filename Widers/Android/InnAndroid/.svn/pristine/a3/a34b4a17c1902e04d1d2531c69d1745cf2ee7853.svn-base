@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@mipmap/btn_room_number"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/reserveTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="10:00"
+            android:textColor="@color/actionbar_red"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/noReserveTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/actionbar_red"
+            android:gravity="center"
+            android:background="@color/actionbar_red"
+            android:visibility="visible"
+            android:alpha="0.2"/>
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" android:weightSum="15"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_weight="1" android:weightSum="5"
+        android:layout_height="match_parent" android:layout_gravity="top" android:gravity="top"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/motelTabButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home_location_motel"
+            style="@style/home_location_tab_default"
+            >
+        </Button>
+        <Button
+            android:id="@+id/hotelTabButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home_location_hotel"
+            android:background="@color/lightgrey"
+            style="@style/home_location_tab_default"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/pensionTabButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home_location_pension"
+            android:background="@color/lightgrey"
+            style="@style/home_location_tab_default"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/resortTabButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home_location_resort"
+            style="@style/home_location_tab_default"
+            >
+        </Button>
+
+        <Button
+            android:id="@+id/guestHouseTabButton"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/home_location_guesthouse"
+            android:background="@color/lightgrey"
+            style="@style/home_location_tab_default"
+            >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

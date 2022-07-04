@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileOptions.encoding = 'UTF-8'
+    compileSdkVersion 28
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.and.andelectronics"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+repositories {
+    maven { url "http://dl.bintray.com/populov/maven" }
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.2.0'
+    compile 'com.android.support:cardview-v7:25.2.0'
+    compile 'com.android.support:recyclerview-v7:25.2.0'
+    compile 'com.jakewharton:butterknife:7.0.1' //버터나이프 추가
+    compile 'com.android.support:design:25.2.0' //CollapsingToolbarLayout 추가 위한 디자인
+    compile 'me.relex:circleindicator:1.2.2@aar'
+
+    //자동스크롤 뷰페이저
+    compile ('cn.trinea.android.view.autoscrollviewpager:android-auto-scroll-view-pager:1.1.2'){
+        exclude module: 'support-v4'
+    }
+    compile 'com.github.bumptech.glide:glide:3.7.0' //이미지로더 라이브러리
+
+    compile project(':parallaxviewpager')
+    compile files('libs/ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar')
+    //Google Maps
+    compile 'com.google.android.gms:play-services-maps:12.0.1'
+    //    compile 'com.google.android.gms:play-services:+'
+    compile 'com.android.support.constraint:constraint-layout:1.1.0'
+    compile 'com.applandeo:material-calendar-view:1.4.0'
+    compile 'com.github.jeffreyliu8:FlexBoxRadioGroup:0.0.6'
+    //compile 'com.google.firebase:firebase-core:16.0.6'      //firebase
+    compile 'com.google.firebase:firebase-messaging:12.0.1'
+}
+
+apply plugin: 'com.google.gms.google-services'

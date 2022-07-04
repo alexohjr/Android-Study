@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/checkinButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크인" />
+    <Button
+        android:id="@+id/checkoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="체크아웃" />
+
+    <Button
+        android:id="@+id/reserveCanceButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예약취소" />
+    <Button
+        android:id="@+id/openDoorButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="문열림" />
+</LinearLayout>

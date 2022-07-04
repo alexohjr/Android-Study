@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#EDEDEA"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_marginLeft="20sp"
+        android:layout_height="wrap_content" >
+
+
+        <TextView
+            android:id="@+id/TV_DepCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EDEDEA" android:textStyle="bold"
+            android:text="TextView"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
+</LinearLayout>

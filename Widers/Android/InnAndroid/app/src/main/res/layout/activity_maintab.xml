@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        >
+
+        <LinearLayout
+            android:id="@+id/tabContentParentLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#EDEDEA"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+    <com.and.andelectronics.view.widget.MainTabWidget
+        android:id="@+id/mainTabWidget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+    </com.and.andelectronics.view.widget.MainTabWidget>
+
+
+
+</LinearLayout>

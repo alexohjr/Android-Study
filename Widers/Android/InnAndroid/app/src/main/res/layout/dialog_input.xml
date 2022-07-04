@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="271dp"
+    android:layout_height="wrap_content"
+    android:paddingTop="4dp"
+    android:background="@android:color/white">
+
+    <!-- 메시지 -->
+    <TextView
+        android:id="@+id/d_input_messageTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="32dp"
+        android:gravity="center_horizontal"/>
+
+
+    <View
+        android:id="@+id/d_input_msgHorizontalLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/d_input_messageTv"
+        android:background="@android:color/darker_gray"
+        />
+
+    <EditText
+        android:id="@+id/d_input_inputEt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/d_input_msgHorizontalLineView"
+        android:background="@android:color/white"
+        android:gravity="center"
+        />
+
+    <View
+        android:id="@+id/d_input_horizontalLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/d_input_inputEt"
+        android:background="@android:color/darker_gray"/>
+
+    <!-- 하단 버튼 뷰 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/d_input_horizontalLineView"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp">
+
+        <!-- 취소 버튼 -->
+        <Button
+            android:id="@+id/d_input_cancelBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:text="@string/cancel"
+            style="@style/common_btn_gray"
+            />
+
+        <!-- 확인 버튼 -->
+        <Button
+            android:id="@+id/d_input_confirmBtn"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            style="@style/common_btn_blue"
+            />
+    </LinearLayout>
+</RelativeLayout>
+

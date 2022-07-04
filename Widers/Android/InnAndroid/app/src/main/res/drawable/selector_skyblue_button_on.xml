@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- <solid android:color="#ff1face0" />--><!-- 기존 블루컬러 디폴트-->
+    <!-- <solid android:color="#ff1da0d0" /> --><!-- 기존 블루컬러 셀렉트-->
+    <solid android:color="#64A5E6" />
+
+    <corners android:radius="9px" />
+
+
+</shape>

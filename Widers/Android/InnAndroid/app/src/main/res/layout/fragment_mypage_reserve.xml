@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.and.andelectronics.view.widget.MainActionBar
+        android:id="@+id/mainActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.and.andelectronics.view.widget.MainActionBar>
+
+    <Button
+        android:id="@+id/reservedRoomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="예약된 객실: 0" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_layout">
+
+        <ListView
+            android:id="@+id/reserveListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#EDEDEA"
+            android:divider="#777"
+            android:dividerHeight="0px"
+            android:focusable="true" >
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

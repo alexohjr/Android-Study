@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="271dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_dialog">
+
+    <!-- 타이틀 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/title_input_password"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <EditText
+                android:id="@+id/passwordInputBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/edittext_password_input_6digit"
+                android:inputType="numberPassword"
+                android:gravity="center"
+                android:textColor="@color/lightgrey"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:background="@mipmap/bg_password_inputbox"
+                android:clickable="false"
+                android:focusable="false"
+                android:maxLength="6"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_keypad"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:layout_weight="4"
+            android:layout_margin="20dp"
+            >
+
+            <include layout="@layout/view_number_pad" />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <!-- 하단 버튼 뷰 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <!-- 취소 버튼 -->
+        <Button
+            android:id="@+id/btn_dialog_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/comm_prev"
+            style="@style/btn_dialog_style"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </TextView>
+
+
+        <!-- 확인 버튼 -->
+        <Button
+            android:id="@+id/btn_dialog_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/confirm"
+            style="@style/btn_dialog_style"
+            />
+    </LinearLayout>
+</LinearLayout>
+

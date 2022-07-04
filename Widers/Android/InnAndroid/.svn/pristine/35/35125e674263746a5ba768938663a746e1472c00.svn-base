@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <com.and.andelectronics.view.widget.MainActionBar
+        android:id="@+id/mainActionBar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        >
+    </com.and.andelectronics.view.widget.MainActionBar>
+
+    <!--<android.support.v7.widget.Toolbar android:id="@+id/toolbar"-->
+    <!--android:layout_height="?attr/actionBarSize" android:layout_width="match_parent" android:background="@color/hotpink"-->
+    <!--app:popupTheme="@style/AppTheme.PopupOverlay" />-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swipe_layout">
+
+        <ListView
+            android:id="@+id/lodgementListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#EDEDEA"
+            android:divider="#777"
+            android:dividerHeight="0px"
+            android:focusable="true" >
+        </ListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

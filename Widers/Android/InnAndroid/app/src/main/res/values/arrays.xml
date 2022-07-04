@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="rangeSeekbarArrays">
+        <item>5km</item>
+        <item>10km</item>
+        <item>30km</item>
+        <item>100km</item>
+    </string-array>
+</resources>

@@ -1,0 +1,233 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapseBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:fitsSystemWindows="true"
+            >
+            <!-- app:layout_scrollFlags="scroll|exitUntilCollapsed" -->
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_collapseMode="parallax"
+                android:weightSum="1390"
+                android:fitsSystemWindows="true"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="900">
+
+                    <!-- 화면을 맞추기위해 비어있는 택스트뷰 추가 20180722 yowonsm -->
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    <cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeHeaderAdvertiseViewPager"
+                        android:layout_gravity="center_vertical">
+
+                    </cn.trinea.android.view.autoscrollviewpager.AutoScrollViewPager>
+                   <!-- <android.support.v4.view.ViewPager
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeHeaderAdvertiseViewPager"
+                        android:layout_gravity="center_vertical"
+                       >
+                    </android.support.v4.view.ViewPager>-->
+
+                    <me.relex.circleindicator.CircleIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_gravity="bottom"/>
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_collapseMode="parallax"
+                    android:background="@mipmap/bg_main_location_title"
+                    android:gravity="center"
+                    android:layout_weight="86"
+                    >
+
+                    <Button
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:id="@+id/homeHeaderAddressRefreshButton"
+                        android:background="@mipmap/bg_main_location2"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Large Text"
+                        android:id="@+id/homeHeaderAddressTextView"
+                        android:textColor="#ffffff"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_collapseMode="parallax"
+                    android:layout_weight="202"
+                    android:weightSum="3" >
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeSurroundButton"
+                        android:background="@mipmap/icon_main_category"
+                        android:layout_weight="1"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeLocationButton"
+                        android:background="@mipmap/icon_main_category2"
+                        android:layout_weight="1"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeThemeButton"
+                        android:background="@mipmap/icon_main_category3"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    app:layout_collapseMode="parallax"
+                    android:layout_weight="202"
+                    android:weightSum="3">
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeRecommendButton"
+                        android:background="@mipmap/icon_main_category4"
+                        android:layout_weight="1"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeMyChoiceButton"
+                        android:background="@mipmap/icon_main_category5"
+                        android:layout_weight="1"
+                        />
+
+                    <Button
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:id="@+id/homeMyPageButton"
+                        android:background="@mipmap/icon_main_category6"
+                        android:layout_weight="1"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- 고정할 툴바 -->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                android:fitsSystemWindows="true"
+                android:background="#3E3839">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:weightSum="10">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:layout_weight="9">
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/bg_main_near"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:id="@+id/toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="  내 주변 모텔"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+
+                    <ImageView
+                        android:id="@+id/homeMapImageView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@mipmap/icon_main_map"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginEnd="10dp"/>
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/homeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</android.support.design.widget.CoordinatorLayout>

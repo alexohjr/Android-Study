@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <TextView
+            android:id="@+id/reserveTimeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/btn_time_off"
+            android:text=" 10시 "
+            android:textColor="@color/actionbar_red"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="3dp"
+            android:textSize="15dp"
+            />
+
+        <!--<TextView-->
+            <!--android:id="@+id/noReserveTextView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@color/actionbar_red"-->
+            <!--android:gravity="center"-->
+            <!--android:background="@color/actionbar_red"-->
+            <!--android:visibility="visible"-->
+            <!--android:alpha="0.2"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

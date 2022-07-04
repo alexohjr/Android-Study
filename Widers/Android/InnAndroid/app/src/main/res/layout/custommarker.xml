@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical|center_horizontal"
+   
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal" >
+
+<!-- <ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="5dp"
+    android:adjustViewBounds="true"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/balloon_overlay_close" /> -->
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:textStyle="bold"
+        android:text="title"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+    
+    <TextView
+        android:id="@+id/tell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:textStyle="bold"
+        android:text="tell"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+     <TextView
+        android:id="@+id/addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      
+        android:textStyle="bold"
+        android:text="대한민국어디어디어디어디어디어디"
+        android:textColor="#555555"
+        android:textSize="15sp" />
+  <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_marginLeft="3sp"
+            android:layout_marginRight="3sp"
+            android:background="#AAAAAA" >
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/snippet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+          android:text="snippet"
+        android:textColor="#0067FF"
+        android:textSize="17sp"
+         />
+    
+</LinearLayout>
+
+</LinearLayout>

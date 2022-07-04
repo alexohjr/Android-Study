@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.and.andelectronics" >
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <permission
+        android:name="com.and.andelectronics.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.and.andelectronics.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <application
+        android:name=".Container"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:debuggable="true">
+
+
+        <!-- 구글맵 api를 사용하기 위한 메타데이터 및 라이브러리 -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAFd7iyZ_bOEO6Pnm-upcnlQrVJt2K8nM0" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.and.andelectronics"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <!-- test Activity -->
+        <activity
+            android:name=".test.TestViewActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.main.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity
+            android:name=".view.main.MainTabFragmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.map.LodgmentLocationMapFragmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".view.main.map.StoreMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.detail.DetailViewLodgmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+
+        <activity
+            android:name=".common.view.ViewSettingActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+
+        <activity
+            android:name=".view.main.room.RoomActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.reserve.OvernightReserveActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.reserve.DayuseReserveActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.payment.PayTypeActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.main.payment.PaymentActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.main.enterance.EnteranceConfigActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.enterance.EnteranceTypeActivity"
+            android:theme="@style/AppTheme" />
+
+        <!-- 마이페이지 객실컨트롤 (전등켜기, 예약내역보기, 체크인/아웃등 -->
+        <activity
+            android:name=".view.main.mypage.RemoteControlActivity"
+            android:theme="@style/AppTheme" />
+
+        <!--  RoomGroup  (일반실, 특실 등) 20180525  yowonsm -->
+        <activity
+            android:name=".view.main.detail.RoomGroupActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.main.room.RoomNumberActivity"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name=".view.main.pleasure.RecommendWebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+
+
+        <!-- 서비스 20180212 yowonsm -->
+        <service
+            android:name="com.and.andelectronics.service.BackService"
+            android:enabled="true" />
+
+        <service
+            android:name="com.and.andelectronics.service.NoticeService"
+            android:enabled="true" />
+
+        <service
+            android:name=".FireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

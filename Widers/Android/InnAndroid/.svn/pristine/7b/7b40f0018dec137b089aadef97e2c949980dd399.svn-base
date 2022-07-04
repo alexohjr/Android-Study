@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/roomPagerImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/bg_main"
+            android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="5">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|right"
+                android:orientation="vertical"
+                android:weightSum="2"
+                android:background="#3E3839"
+                android:alpha="0.8"
+                android:layout_weight="2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:orientation="vertical"
+                    android:layout_weight="2"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/roomNumberTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:text="402호"
+                        android:textColor="#ffffff"
+                        android:textSize="30dp"
+                        android:textStyle="bold" />
+
+
+                    <ImageView
+                        android:id="@+id/roomRatingImageView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:background="@mipmap/bg_main_rating"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start">
+                        <TextView
+                            android:id="@+id/roomDayuseTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:maxLines="1"
+                            android:text="대실예약"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"/>
+                        <TextView
+                            android:id="@+id/roomDayusePriceTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:maxLines="1"
+                            android:text="30,000원"
+                            android:textColor="#ffffff"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|end"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="start">
+                        <TextView
+                            android:id="@+id/roomOvernightTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:maxLines="1"
+                            android:text="숙박예약"
+                            android:gravity="center"
+                            android:textColor="#ffffff"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:id="@+id/roomOvernightPriceTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:maxLines="1"
+                            android:text="50,000원"
+                            android:textColor="#ffffff"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|end"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

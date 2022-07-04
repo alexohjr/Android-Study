@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\libs\ksoap2-android-assembly-2.6.0-jar-with-dependencies.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1e6b3ed807723cb008284b8b59d912e3161b77f1">
+        <dex dex="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\2\ksoap2-android-assembly-2.6.0-jar-with-dependencies_09d0ba23172ba80140a68f371ee40d64ab5110db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ad4f0cf0db3346c641e9e43469211ade7fe077a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\libs\httpcore-4.2.4.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3b7f38df6de5dd8b500e602ae8c2dd5ee446f883">
+        <dex dex="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore-4.2.4_8df272cb84fa018d858586d9c125057f0990b533\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3c04664d3db48405558fa53181f7386bd7b5a4cd">
+        <dex dex="C:\SourceCode\AndroidStudioWorkSpace\ANDELEC\InnAndroid\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_b8e15224b8f52023d5a5392e2aff2278b5bf6eed\classes.dex" />
+    </item>
+
+</items>

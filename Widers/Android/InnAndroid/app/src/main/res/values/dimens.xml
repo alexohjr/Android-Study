@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="tab_height">50dp</dimen>
+    <dimen name="imageview_height">200dp</dimen>
+    <dimen name="header_height">350dp</dimen>
+    <dimen name="header_linear_height">300dp</dimen>
+    <dimen name="min_header_height">350dp</dimen>
+    <dimen name="comm_actionbar_height">46dp</dimen>
+
+
+
+
+    <!-- List Item Title -->
+    <dimen name = "comm_listHeader_height">22.5sp</dimen>
+    <!-- List Item 1/2줄 -->
+    <dimen name="comm_listitem12_height">22sp</dimen>
+    <dimen name="comm_listitem24_height">44sp</dimen>
+    <!-- TextItem 도저히 안될때 -->
+    <dimen name="comm_textitem110_height">27.5sp</dimen>
+    <dimen name="comm_textitem133_height">33sp</dimen>
+    <!-- TextItem 디폴트 height -->
+    <dimen name="comm_textitem140_height">35sp</dimen>
+
+    <!-- List Item 1줄 -->
+    <dimen name="comm_listitem1_height">45sp</dimen>
+    <!-- List Item 2줄 -->
+    <dimen name="comm_listitem2_height">62.5sp</dimen>
+    <!-- List Item 3줄 -->
+    <dimen name="comm_listitem3_height">62.5sp</dimen>
+
+    <!-- List Item 4줄 -->
+    <dimen name="comm_listitem4_height">87.5sp</dimen>
+    <!-- List Item 5줄 -->
+    <dimen name="comm_listitem5_height">87.5sp</dimen>
+
+    <!-- 팝업 -->
+    <dimen name="comm_popup_default_margin">8.75sp</dimen>
+    <dimen name="comm_popup_default_height">567sp</dimen>
+    <dimen name="comm_popup_default_width">350sp</dimen>
+
+
+    <!-- 알짜페이 DIMEN -->
+    <dimen name="text_default">17dp</dimen>
+
+    <dimen name="keypad_margin">16dp</dimen>
+
+    <dimen name="text_default_number_pad">20dp</dimen>
+
+</resources>

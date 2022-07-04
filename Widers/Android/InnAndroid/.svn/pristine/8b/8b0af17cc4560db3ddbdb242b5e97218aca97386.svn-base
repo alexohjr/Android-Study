@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="#D80546"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/comm_actionbar_height"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/IV_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30sp"
+
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/IV_actionBack"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15sp"
+            android:background="@drawable/selector_action_prev"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/TV_actionTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="거긴어때"
+            android:textColor="#ffffff"    android:textAppearance="?android:attr/textAppearanceLarge"
+
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/viewSettingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_action_kind"
+            android:text="설정"
+            android:textColor="#ffffff"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@+id/mapImageView"
+            android:gravity="center"
+            android:layout_alignParentBottom="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mapImageView"
+            android:src="@android:drawable/ic_dialog_map"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/IV_save" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

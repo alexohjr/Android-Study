@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "42767686014",
+    "firebase_url": "https://andelectronics-1177.firebaseio.com",
+    "project_id": "andelectronics-1177",
+    "storage_bucket": "andelectronics-1177.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42767686014:android:8a79c74f5f04b0ed",
+        "android_client_info": {
+          "package_name": "com.and.andelectronics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42767686014-tvpe4r6p1t2df7af2hn6vo1rvtothsms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAp-l3P48pnNkOk02IFEJbXECIQ5Kd4ioM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

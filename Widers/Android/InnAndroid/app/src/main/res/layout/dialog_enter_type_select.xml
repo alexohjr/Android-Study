@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="271dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_dialog">
+
+    <!-- 타이틀 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="@string/title_enter_type_select"
+            android:gravity="center"
+            android:textColor="@color/white"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@mipmap/btn_password_input"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/inputPasswordButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/title_input_password"
+                android:gravity="center"
+                android:textColor="@color/actionbar_red"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"
+                android:background="@color/translucent"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@mipmap/btn_member_card"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/memberCardButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/member_card"
+                android:gravity="center"
+                android:textColor="@color/actionbar_red"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"
+                android:background="@color/translucent"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@mipmap/btn_front_key"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/frontKeyButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/front_key"
+                android:gravity="center"
+                android:textColor="@color/actionbar_red"
+                android:textStyle="bold"
+                android:paddingLeft="30dp"
+                android:background="@color/translucent"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <!-- 하단 버튼 뷰 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+
+        <!-- 취소 버튼 -->
+        <Button
+            android:id="@+id/btn_dialog_prev"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/comm_prev"
+            style="@style/btn_dialog_style"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </TextView>
+
+
+        <!-- 확인 버튼 -->
+        <Button
+            android:id="@+id/btn_dialog_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/comm_close"
+            style="@style/btn_dialog_style"
+            />
+    </LinearLayout>
+</LinearLayout>
+
