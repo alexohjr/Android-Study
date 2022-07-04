@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tel1">
+        <item>선택</item>
+        <item>010</item>
+        <item>011</item>
+        <item>019</item>
+        <item>070</item>
+        <item>02</item>
+    </string-array>
+</resources>
