@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ex02Activity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_alignParentTop="true"
+        android:background="#8c8c8c"
+        android:textSize="18sp"
+        android:id="@+id/ex02_button"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="이름을 입력하세요."
+        android:layout_below="@id/ex02_button"
+        android:id="@+id/ex02_name"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:hint="비밀번호를 입력하세요."
+        android:layout_below="@id/ex02_name"
+        android:id="@+id/ex02_pwd"
+        android:inputType="textPassword"
+        />
+
+</RelativeLayout>
