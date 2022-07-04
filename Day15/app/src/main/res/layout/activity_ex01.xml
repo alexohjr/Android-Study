@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ex01Activity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#777777"
+        android:textSize="40sp"
+        android:id="@+id/text_view_timer"
+        android:text="00:00:00" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e4e4"
+        android:text="스탑워치"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:id="@+id/text_view_text"
+        />
+
+    <!-- ScrollView : 스크롤이 가능한 뷰
+         주의 ! ScrollView는 자식뷰가 딱 1개이어야 함
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll_view"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:id="@+id/text_view_records"
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="시작"
+            android:id="@+id/start_button"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="기록"
+            android:id="@+id/record_button"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</LinearLayout>
