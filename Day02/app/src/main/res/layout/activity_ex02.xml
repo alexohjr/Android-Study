@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--android:layout_margin="100dp" :: 레이아웃의 바깥여백 -->
+    <!--android:padding="100dp" :: 레리아웃의 내부여백 -->
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@color/colorOrange"
+        android:id="@+id/orangeImgView"
+        />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@color/colorGreen"
+        android:id="@+id/greenImgView"
+        android:layout_toRightOf="@id/orangeImgView"
+        />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/colorBlack"
+        android:layout_below="@id/orangeImgView"
+        android:layout_toRightOf="@id/orangeImgView"
+        android:id="@+id/blackImgView"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        android:id="@+id/primaryImgView"
+        android:layout_toLeftOf="@id/blackImgView"
+        android:layout_below="@id/blackImgView"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorRed"
+        android:id="@+id/redImgView"
+        android:layout_toRightOf="@id/primaryImgView"
+        android:layout_below="@id/primaryImgView"
+        />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/colorBlue"
+        android:id="@+id/blueImgView"
+        android:layout_toRightOf="@id/redImgView"
+        android:layout_below="@id/redImgView"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_toRightOf="@id/greenImgView"
+        />
+
+</RelativeLayout>
